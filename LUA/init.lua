@@ -52,7 +52,7 @@ m = mqtt.Client(clientID, 120, BR_USER, BR_PWD)
 m:on("connect", function(client) print ("connected") end)
 m:on("offline", function(client) print ("offline") end)
 m:connect(BROCKER, BR_PORT, secure, autoreco, function (client) print("connected") end)
---m:suscribe(TOPIC, QoS, function(client) print("subscribe success") end)
+m:suscribe(TOPIC, QoS, function(client) print("subscribe success") end)
 
 dofile(FILE)
 
