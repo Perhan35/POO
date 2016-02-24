@@ -1,7 +1,7 @@
 -- poo_test.lua
 -- Perhan Scudeller
 -- 22/02/16
-
+OUI JE PEUX
 print("poo_test.lua - debut")
 
 -- récuperer donnees sur GPIO/gpio
