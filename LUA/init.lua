@@ -10,7 +10,7 @@ BR_USER = "esp_robinet"
 BR_PSW = "esp_robinet"
 secure = 0 -- non sécurisé
 autoreco = 0 -- se reconnect automatiquement 
-TOPIC = "/PtEau"
+TOPIC = "/PtEau/pieceX/robinet"
 QoS = 2 -- sauvegarde serveur jusqu'à transmision 
 FILE = "poo_test.lua"
 clientID = "rsp_mosquitto"
@@ -19,6 +19,7 @@ FREQ = 2 --(en min) envoie de données au serveur toutes les
 print("open_init")
 
 -- configuration pin 
+--for debug only
 --GPIO 0
 pin=3
 gpio.mode(pin, gpio.OUTPUT)
