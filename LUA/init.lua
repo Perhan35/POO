@@ -10,7 +10,7 @@ BR_USER = "esp_robinet"
 BR_PSW = "esp_robinet"
 secure = 0 -- non sécurisé
 autoreco = 0 -- se reconnect automatiquement 
-TOPIC = "/PtEau/pieceX/robinet"
+TOPIC = "PtEau/pieceY/robinet"
 QoS = 2 -- sauvegarde serveur jusqu'à transmision 
 FILE = "poo_test.lua"
 clientID = "rsp_mosquitto"
@@ -53,7 +53,7 @@ m = mqtt.Client(clientID, 120, BR_USER, BR_PWD)
 m:on("connect", function(client) print ("connected") end)
 m:on("offline", function(client) print ("offline") end)
 m:connect(BROCKER, BR_PORT, secure, autoreco, function (client) print("connected") end)
-m:suscribe(TOPIC, QoS, function(client) print("subscribe success") end)
+m:subscribe(TOPIC, QoS, function(client) print("subscribe success") end)
 
 dofile(FILE)
 
