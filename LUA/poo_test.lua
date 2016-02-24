@@ -1,7 +1,7 @@
 -- poo_test.lua
 -- Perhan Scudeller
 -- 22/02/16
-OUI JE PEUX
+
 print("poo_test.lua - debut")
 
 -- récuperer donnees sur GPIO/gpio
@@ -27,6 +27,6 @@ tmr.alarm(0, FREQ*60000, 0, function()
 
 
 -- mettre en mode sleep /attendre nouvelle entree(external interrupts) 
-
+--TODO 
 
 print("poo_test.lua - fin")
