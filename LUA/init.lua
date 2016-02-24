@@ -5,7 +5,7 @@
 AP_SSID = "Perhan"
 AP_PWD = ""
 BROCKER = "192.168.2.1"
-BR_PORT = 1880
+BR_PORT = 1883
 BR_USER = "esp_robinet"
 BR_PSW = "esp_robinet"
 secure = 0 -- non sécurisé
