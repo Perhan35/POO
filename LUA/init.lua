@@ -18,7 +18,7 @@ TOPIC = "trial_topic"
 QoS = 0 -- non sauvegarde serveur jusqu'à transmision 
 clientID = ""
 FREQ = 2 --(en min) envoie de données au serveur toutes les
---watch out freg, used for debug 
+--watch out freq, used for debug 
 
 -- configuration pin 
 --GPIO 0
